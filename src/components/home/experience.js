@@ -6,21 +6,25 @@ const columns = [
     dataIndex: 'institucion',
     key: 'institucion',
     render: text => <a href={text[1]} target='_blank'>{text[0]}</a>,
+    responsive: ["sm","xs"]
   },
   {
     title: 'Fecha',
     dataIndex: 'fecha',
     key: 'fecha',
+    responsive: ["sm","xs"]
   },
   {
     title: 'Función',
     dataIndex: 'empleo',
     key: 'empleo',
+    responsive: ["sm","xs"]
   },
   {
     title: 'Descripción',
     dataIndex: 'descripcion',
     key: 'descripcion',
+    responsive: ["sm"]
   },
   {
     title: 'Keywords',
@@ -71,6 +75,7 @@ const columns = [
         })}
       </>
     ),
+    responsive: ["sm"]
   },
 ];
 
