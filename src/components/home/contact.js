@@ -12,8 +12,8 @@ function AppContact() {
         </div>
         <div className="quickSupport">
           <h3></h3>
-          <p>Mi bandeja de entrada está siempre abierta. Ya sea que tengas una pregunta o simplemente quieras saludar, ¡haré todo lo posible para responderte pronto! Contáctame a través de mi correo electrónico <a href="mailto:david.alejandro.proteco@gmail.com?Subject=Contacto%20desde%20website" target='_blank'>info@ingdavidsilva.com</a></p>
-          <Button type="primary" size="large" href="mailto:david.alejandro.proteco@gmail.com?Subject=Contacto%20desde%20website" target='_blank'><i className="fas fa-envelope"></i> Enviar mensaje</Button>
+          <p>Mi bandeja de entrada está siempre abierta. Ya sea que tengas una pregunta o simplemente quieras saludar, ¡haré todo lo posible para responderte pronto! Contáctame a través de mi correo electrónico <a href="mailto:alejandroxslv@gmail.com?Subject=Contacto%20desde%20website" target='_blank'>alejandroxslv@gmail.com</a></p>
+          <Button type="primary" size="large" href="mailto:alejandroxslv@gmail.com?Subject=Contacto%20desde%20website" target='_blank'><i className="fas fa-envelope"></i> Enviar mensaje</Button>
         </div>
       </div>
     </div>  
