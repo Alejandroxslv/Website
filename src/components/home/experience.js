@@ -75,7 +75,7 @@ const columns = [
         })}
       </>
     ),
-    responsive: ["sm", "xs"]
+    responsive: ["sm"]
   },
 ];
 
