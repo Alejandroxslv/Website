@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import CV from '../../assets/Resume.pdf';
 
 import { Anchor, Drawer, Button } from 'antd';
+import { DownloadOutlined } from '@ant-design/icons';
 
 const { Link } = Anchor;
 
@@ -27,12 +29,14 @@ function AppHeader() {
             <Link href="#profile" title="Perfil" />
             <Link href="#experience" title="Experiencia" />
             <Link href="#projects" title="Proyectos" />
-            <Link href="#contact" title="Contacto" />
+            <Link href="#contact" title="Contacto"/>
           </Anchor>
+          
+          
         </div>
         <div className="mobileVisible">
           <Button type="primary" onClick={showDrawer}>
-            <i className="fas fa-bars"></i>
+            <i className="fas fa-stream"></i>
           </Button>
           <Drawer
             placement="right"

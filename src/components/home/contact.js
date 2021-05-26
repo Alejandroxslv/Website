@@ -1,7 +1,9 @@
 import React from 'react';
 
-import { Form, Input, Button, Checkbox } from 'antd';
+import qr_code from '../../assets/images/qr_namecard.png';
+import { Form, Input, Button, Checkbox, Image, Tag} from 'antd';
 const { TextArea } = Input;
+
 
 function AppContact() {
   return (
@@ -15,6 +17,10 @@ function AppContact() {
           <p>Mi bandeja de entrada está siempre abierta. Ya sea que tengas una pregunta o simplemente quieras saludar, ¡haré todo lo posible para responderte pronto!</p><p>Contáctame a través de mi correo electrónico <a href="mailto:alejandroxslv@gmail.com?Subject=Contacto%20desde%20website" target='_blank'>alejandroxslv@gmail.com</a></p>
           <Button type="primary" size="large" href="mailto:alejandroxslv@gmail.com?Subject=Contacto%20desde%20website" target='_blank'><i className="fas fa-envelope"></i> Enviar mensaje</Button>
         </div>
+        <p className="qr_code">
+        <img width={230} alt="qr_code" src={qr_code}/>
+        </p>
+        
       </div>
     </div>  
   );
