@@ -15,11 +15,8 @@ function AppProfile() {
             <p>Ingeniero Eléctrico Electrónico</p>
         </div>
         
-        
-        
-        
     <Row>
-      <Col span={11}><Image width="600" src={avatar} /></Col>
+      <Col span={11}><Image width="600" src={avatar} preview={false}/></Col>
       <Col span={11} offset={1}>
         <p className="profile-text">
           Hola, soy un ingeniero eléctrico electrónico recién egresado de la <a href="https://www.ingenieria.unam.mx/" target="_blank">Facultad de Ingeniería, UNAM</a> y especializado 
@@ -29,7 +26,7 @@ function AppProfile() {
         </p>
         <div className="btnHolder">
  
-            <Button type="primary" icon={<DownloadOutlined />} size="50" href={CV} target='_blank'>
+            <Button type="primary" icon={<DownloadOutlined />} size="50" href='https://drive.google.com/file/d/1lfqgWk6hGjSPchfBUloCtC3lFnJvJ7qm/view?usp=sharing' target='_blank'>
               Descargar CV
             </Button>
 
