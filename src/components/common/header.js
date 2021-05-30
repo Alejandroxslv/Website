@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import CV from '../../assets/Resume.pdf';
 
-import { Anchor, Drawer, Button } from 'antd';
-import { DownloadOutlined } from '@ant-design/icons';
+import { Anchor, Drawer, Button, Image } from 'antd';
+import { DownloadOutlined, AlipayOutlined } from '@ant-design/icons';
 
 const { Link } = Anchor;
 
@@ -21,7 +20,7 @@ function AppHeader() {
     <div className="container-fluid">
       <div className="header">
         <div className="logo">
-          <i className="fas fa-bolt"></i>
+          <i className="fas fa-bolt" size="small"></i>
           <a href="#">SLDA</a>
         </div>
         <div className="mobileHidden">
@@ -30,6 +29,7 @@ function AppHeader() {
             <Link href="#experience" title="Experiencia" />
             <Link href="#projects" title="Proyectos" />
             <Link href="#contact" title="Contacto"/>
+            <Button type="dashed" href="#" size="small" shape="round" icon={<AlipayOutlined />}>English</Button>
           </Anchor>
           
           
@@ -50,6 +50,8 @@ function AppHeader() {
                 <Link href="#projects" title="Proyectos" />
                 <Link href="#contact" title="Contacto" />
             </Anchor>
+            <br/>
+            <Button type="dashed" href="#" size="small" shape="round" icon={<AlipayOutlined />}>English</Button>
           </Drawer>
         </div>
       </div>

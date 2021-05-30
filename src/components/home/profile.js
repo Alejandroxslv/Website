@@ -1,5 +1,4 @@
 ﻿import React from 'react';
-import CV from '../../assets/Resume.pdf';
 
 import avatar from '../../assets/images/avatar-01.png';
 
@@ -16,8 +15,8 @@ function AppProfile() {
         </div>
         
     <Row>
-      <Col span={11}><Image width="600" src={avatar} preview={false}/></Col>
-      <Col span={11} offset={1}>
+      <Col md={11}><Image width="600" src={avatar} preview={false}/></Col>
+      <Col md={11} offset={1}>
         <p className="profile-text">
           Hola, soy un ingeniero eléctrico electrónico recién egresado de la <a href="https://www.ingenieria.unam.mx/" target="_blank">Facultad de Ingeniería, UNAM</a> y especializado 
           en el área de control y automatización. Disfruto diseñar y programar la lógica que hay detrás del funcionamiento de sistemas autómatas, tales como Controladores Lógicos Programables de las marcas <b>Allen Bradley</b> y <b>Siemens</b>, así como de los Sistemas de Control Distribuido y Supervisión SCADA. Además, me divierto realizando scripts en <b>python</b> utilizando mis conocimientos en <b>Inteligencia Artificial</b>.<br/>
@@ -26,7 +25,7 @@ function AppProfile() {
         </p>
         <div className="btnHolder">
  
-            <Button type="primary" icon={<DownloadOutlined />} size="50" href='https://drive.google.com/file/d/1lfqgWk6hGjSPchfBUloCtC3lFnJvJ7qm/view?usp=sharing' target='_blank'>
+            <Button  icon={<DownloadOutlined />} size="50" href='https://drive.google.com/file/d/1lfqgWk6hGjSPchfBUloCtC3lFnJvJ7qm/view?usp=sharing' target='_blank'>
               Descargar CV
             </Button>
 
