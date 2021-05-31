@@ -25,11 +25,11 @@ function AppHeader() {
         </div>
         <div className="mobileHidden">
           <Anchor targetOffset="20">
-            <Link href="#profile" title="Perfil" />
-            <Link href="#experience" title="Experiencia" />
-            <Link href="#projects" title="Proyectos" />
-            <Link href="#contact" title="Contacto"/>
-            <Button type="dashed" href="/EN" size="small" shape="round" icon={<AlipayOutlined />}>English</Button>
+            <Link href="#profile" title="Profile" />
+            <Link href="#experience" title="Experience" />
+            <Link href="#projects" title="Projects" />
+            <Link href="#contact" title="Contact"/>
+            <Button type="dashed" href="/" size="small" shape="round" icon={<AlipayOutlined />}>Español</Button>
           </Anchor>
           
           
@@ -45,13 +45,13 @@ function AppHeader() {
             visible={visible}
           >
             <Anchor targetOffset="20">
-                <Link href="#profile" title="Perfil" />
-                <Link href="#experience" title="Experiencia" />
-                <Link href="#projects" title="Proyectos" />
-                <Link href="#contact" title="Contacto" />
+                <Link href="#profile" title="Profile" />
+                <Link href="#experience" title="Experience" />
+                <Link href="#projects" title="Projects" />
+                <Link href="#contact" title="Contact" />
             </Anchor>
             <br/>
-            <Button type="dashed" href="/EN" size="small" shape="round" icon={<AlipayOutlined />}>English</Button>
+            <Button type="dashed" href="/" size="small" shape="round" icon={<AlipayOutlined />}>Español</Button>
           </Drawer>
         </div>
       </div>

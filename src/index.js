@@ -1,13 +1,21 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import App_EN from './App_EN';
+import NotFound from './NotFound';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Switch>
+      <Route exact path="/" component={App}/>
+      {/* <Route exact path="/ES" component={App}/> */}
+      <Route exact path="/EN" component={App_EN}/>
+      <Route component={NotFound}/>
+    </Switch>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
