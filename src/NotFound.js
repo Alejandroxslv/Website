@@ -1,24 +1,39 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import lottie from 'lottie-web';
 import './App.css';
 import 'antd/dist/antd.css';
 import { Result, Button } from 'antd';
 
-import AppHeader from './components/common/header_en';
-import AppFooter from './components/common/footer';
-import AppHome from './views/home_en';
-
 import { Layout } from 'antd';
-const { Header, Content, Footer } = Layout;
 
-function App_EN() {
+function NotFound() {
+
+  const container = useRef(null)
+
+  useEffect(() => {
+    lottie.loadAnimation({
+      container: container.current,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      animationData: require('./404_page.json')
+    })
+  },[])
+  
+
+
   return (
-    <Result
-    status="404"
-    title="Error 404"
-    subTitle="Lo siento, la página que has solicitado aún no existe :("
-    extra={<Button type="primary" href="/">Regresar a index</Button>}
-  />
+    <div className='App'>
+      <div className='container' ref={container}>
+      </div>
+      <div className="container-fluid">
+        <div className="titleHolder">
+            <Button href="/">Back to index</Button>
+        </div>
+      
+      </div>
+    </div>
   );
 }
 
-export default App_EN;
+export default NotFound;

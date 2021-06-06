@@ -210,10 +210,12 @@ hero
 ---- 
 */
 .heroBlock {
-  background: url('assets/images/bg-hero.jpg') no-repeat;
+/*background: url('assets/images/bg.jpg');*/
+  background: #fff;
+  color: #fff;
   background-position: 50% 100%;
   background-size: cover;
-  height: 100vh;
+  height: 50vh;
 }
 
 .heroBlock .container-fluid {
@@ -226,11 +228,11 @@ hero
 }
 
 .heroBlock .slick-dots li button {
-  background: #000 !important;
+  background: #fff !important;
 }
 
 .heroBlock .slick-dots li.slick-active button {
-  background: #1890ff !important;
+  background: #ffff !important;
 }
 
 .heroBlock .content {
