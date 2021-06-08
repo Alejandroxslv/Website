@@ -13,7 +13,6 @@ import * as electrical from './electrical.json';
 import * as start from './start.json';
 import * as location from './world-locations.json';
 import * as locationBlue from './locations_blue.json';
-
 import * as success from './success.json';
 
 import { Layout } from 'antd';
