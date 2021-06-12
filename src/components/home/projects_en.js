@@ -1,22 +1,16 @@
 import React, {useState} from 'react';
-import { List, Avatar, Space, message, Image } from 'antd';
+import { List, Avatar, Space, Divider, Image } from 'antd';
 
 
 import { CloudDownloadOutlined , LikeOutlined, MessageOutlined, GithubOutlined , HeartOutlined , InfoCircleOutlined } from '@ant-design/icons';
-import working from '../../assets/images/working.jpg';
-import icon from '../../assets/images/profile.jpg';
-import GOB from '../../assets/images/GOB.png';
-import SGSS from '../../assets/images/SGSS.png';
-import image4 from '../../assets/images/planos.jpg';
-import image5 from '../../assets/images/unlimited-features.jpg';
-import image6 from '../../assets/images/advanced-option.jpg';
+import icon from '../../assets/images/avatar-01.png';
 
 const listData = [];
 
 
 listData.push({
   title: 'Eigen',
-  href: 'https://www.google.com/',
+  href: '/Eigen',
   avatar: {icon},
   description:
     'Recognition of emotions',
@@ -34,7 +28,7 @@ listData.push({
 
 listData.push({
   title: 'Arco',
-  href: 'https://www.google.com/',
+  href: '/Arco',
   avatar: {icon},
   description:
     'Personal assistant',
@@ -52,7 +46,7 @@ listData.push({
 
 listData.push({
   title: 'SoftStation*',
-  href: 'https://www.google.com/',
+  href: '/SoftStation',
   avatar: {icon},
   description:
     'Control and Supervision of an electro-pneumatic plant',
@@ -70,7 +64,7 @@ listData.push({
 
 listData.push({
   title: 'Aurv',
-  href: 'https://www.google.com/',
+  href: '/Aurv',
   avatar: {icon},
   description:
     '',
@@ -88,7 +82,7 @@ listData.push({
 
 listData.push({
   title: 'Sumb*',
-  href: 'https://www.ingenieroalejandrolopez.com/',
+  href: '/Sumb',
   avatar: {icon},
   description:
     'Control and Supervision of a hydraulic plant',
@@ -127,14 +121,10 @@ function AppProjects() {
         </div>
         <div className="content">
         <List
+            bordered
             itemLayout="vertical"
             size="large"
             dataSource={listData}
-            footer={
-              <div>
-                *<b>private</b> project. 
-              </div>
-            }
             renderItem={item => (
               <List.Item
                 key={item.title}
@@ -161,6 +151,7 @@ function AppProjects() {
               </List.Item>
             )}
           />
+          <Divider orientation="left">* Private project</Divider>
         </div>
         
       </div>

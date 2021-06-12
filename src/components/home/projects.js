@@ -1,25 +1,34 @@
 import React, {useState} from 'react';
-import { List, Avatar, Space, message, Image } from 'antd';
-
+import { List, Avatar, Space, Divider, Image } from 'antd';
 
 import { CloudDownloadOutlined , LikeOutlined, MessageOutlined, GithubOutlined , HeartOutlined , InfoCircleOutlined } from '@ant-design/icons';
-import working from '../../assets/images/working.jpg';
-import icon from '../../assets/images/profile.jpg';
-import GOB from '../../assets/images/GOB.png';
-import SGSS from '../../assets/images/SGSS.png';
-import image4 from '../../assets/images/planos.jpg';
-import image5 from '../../assets/images/unlimited-features.jpg';
-import image6 from '../../assets/images/advanced-option.jpg';
+import icon from '../../assets/images/avatar-01.png';
+
 
 const listData = [];
 
-const a = () => (
-  <a>Hola mundo</a>
-);
+listData.push({
+  title: 'SoftStation*',
+  href: '/SoftStation',
+  avatar: {icon},
+  description:
+    'Control y Supervisión de una planta electro-neumática',
+  content:
+    'Programación en Ladder de apertura secuencial de pistones. Sistema de supervisión SCADA: controles e indicadores de inicio, paro y movimiento de la secuencia. Diagramas de tendencias, planos y documentación.',
+  imagen: 
+  'https://images.ctfassets.net/wqwerb01q4v1/23EpaZdmchDNurmEp7cHMl/782d294d5d1416d1e97577b337ed6f21/tray-blog-general-spiral_4x-min.png?w=1700&h=729',
+  likes:
+    '14',
+  comments:
+    '0',
+  downloads:
+    '20',
+  });
+
 
 listData.push({
   title: 'Eigen',
-  href: 'https://www.google.com/',
+  href: '/Eigen',
   avatar: {icon},
   description:
     'Reconocimiento de emociones',
@@ -37,7 +46,7 @@ listData.push({
 
 listData.push({
   title: 'Arco',
-  href: 'https://www.google.com/',
+  href: '/Arco',
   avatar: {icon},
   description:
     'Asistente personal',
@@ -53,27 +62,11 @@ listData.push({
     '96',
   });
 
-listData.push({
-  title: 'SoftStation*',
-  href: 'https://www.google.com/',
-  avatar: {icon},
-  description:
-    'Control y Supervisión de una planta electro-neumática',
-  content:
-    'Programación en Ladder de apertura secuencial de pistones. Sistema de supervisión SCADA: controles e indicadores de inicio, paro y movimiento de la secuencia. Diagramas de tendencias, planos y documentación.',
-  imagen: 
-  'https://images.ctfassets.net/wqwerb01q4v1/23EpaZdmchDNurmEp7cHMl/782d294d5d1416d1e97577b337ed6f21/tray-blog-general-spiral_4x-min.png?w=1700&h=729',
-  likes:
-    '14',
-  comments:
-    '0',
-  downloads:
-    '20',
-  });
+
 
 listData.push({
   title: 'Aurv',
-  href: 'https://www.google.com/',
+  href: '/Aurv',
   avatar: {icon},
   description:
     '',
@@ -91,7 +84,7 @@ listData.push({
 
 listData.push({
   title: 'Sumb*',
-  href: 'https://www.ingenieroalejandrolopez.com/',
+  href: '/Sumb',
   avatar: {icon},
   description:
     'Control y supervisión de una planta hidráulica',
@@ -130,14 +123,10 @@ function AppProjects() {
         </div>
         <div className="content">
         <List
+            bordered
             itemLayout="vertical"
             size="large"
             dataSource={listData}
-            footer={
-              <div>
-                * Proyecto <b>privado</b>. 
-              </div>
-            }
             renderItem={item => (
               <List.Item
                 key={item.title}
@@ -148,11 +137,7 @@ function AppProjects() {
                   <IconText icon={MessageOutlined} text={item.comments} key="list-vertical-message" />,
                 ]}
                 extra={
-                  <img
-                    width={262}
-                    alt="project-img"
-                    src={item.imagen}
-                  />
+                  <img src={item.imagen} width={262} />
                 }
               >
                 <List.Item.Meta
@@ -164,6 +149,7 @@ function AppProjects() {
               </List.Item>
             )}
           />
+          <Divider orientation="left">* Proyecto privado</Divider>
         </div>
         
       </div>

@@ -1,9 +1,21 @@
 import React from 'react';
+import Lottie from 'react-lottie';
 
 import avatar from '../../assets/images/avatar-01.png';
+import * as construction from '../../assets/images/construction.json';
 
 import { Row, Col, Image, Button } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
+
+
+const defaultOptions1 = {
+  loop: true,
+  autoplay: true, 
+  animationData: construction.default,
+  rendererSettings: {
+    preserveAspectRatio: 'xMidYMid slice'
+  }
+};
 
 function AppProfile() {
   return (
@@ -15,7 +27,8 @@ function AppProfile() {
         </div>
         
     <Row>
-      <Col md={{ span: 11 }}><Image width="600" src={avatar} preview={false}/></Col>
+      {/* <Col md={{ span: 11 }}><Image width="50" src={avatar} preview={false}/></Col> */}
+      <Col xs={{ span: 11 }} md={{ span: 11 }}><center><Lottie responsive options={defaultOptions1} height={300} width={450}/></center></Col>
       <Col md={{ span: 11, offset: 1 }}>
         <p className="profile-text">
           Hello, I am an electronic electrical engineer recently graduated from the <a href="https://www.ingenieria.unam.mx/" target="_blank">Facultad de Ingeniería, UNAM</a> and specialized in the area of control and automation. I enjoy designing and programming the logic behind the operation of automated systems, such as Programmable Logic Controllers from the brands <b> Allen Bradley </b> and <b> Siemens </b>, as well as Distributed Control Systems and SCADA supervision. Also, I have fun scripting <b> python </b> using my knowledge of <b> Artificial Intelligence </b>. <br/>
